@@ -1,5 +1,7 @@
 import chess
 import book
+import tkinter
+
 pvalue = {
     chess.PAWN: 100,
     chess.ROOK: 480,
