@@ -197,3 +197,4 @@ bpiece16 = input("enter in piece abb")
 bpiece16loc = input("enter in the order-coord of the piece (eg. 64 for h1, 32 for h5)")
 print("Confirmation: You have inputted a", bpiece16, "on order-coord", bpiece16loc)
 
+# Computer always moves first for NOW
