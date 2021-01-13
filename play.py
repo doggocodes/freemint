@@ -123,8 +123,8 @@ knight2value = knightEvalWhite[knight2] + chess.KNIGHT
 
 bishop1 = 58
 bishop2 = 61
-bishop1value = bishopEvalWhite[bishop1] + chess.BISHOP
-bishop2value = bishopEvalWhite[bishop2] + chess.BISHOP
+bishop1value = bishopEvalBlack[bishop1] + chess.BISHOP
+bishop2value = bishopEvalBlack[bishop2] + chess.BISHOP
 
 rook1 = 56
 rook2 = 63
@@ -140,3 +140,43 @@ king1value = kingevalWhite[king1] + chess.KING
 
 
 # Computer always moves first for NOW
+
+
+#black side pieces
+bpawn1 = 48
+bpawn2 = 49
+bpawn3 = 50
+bpawn4 = 51
+bpawn5 = 52
+bpawn6 = 53
+bpawn7 = 54
+bpawn8 = 55
+bpawn1value = pawnEvalBlack[bpawn1] + chess.PAWN
+bpawn2value = pawnEvalBlack[bpawn2] + chess.PAWN
+bpawn3value = pawnEvalBlack[bpawn3] + chess.PAWN
+bpawn4value = pawnEvalBlack[bpawn4] + chess.PAWN
+bpawn5value = pawnEvalBlack[bpawn5] + chess.PAWN
+bpawn6value = pawnEvalBlack[bpawn6] + chess.PAWN
+bpawn7value = pawnEvalBlack[bpawn7] + chess.PAWN
+bpawn8value = pawnEvalBlack[bpawn8] + chess.PAWN
+
+bknight1 = 57
+bknight2 = 62
+bknight1value = knightEvalBlack[bknight1] + chess.KNIGHT
+bknight2value = knightEvalBlack[bknight2] + chess.KNIGHT
+
+bbishop1 = 58
+bbishop2 = 61
+bbishop1value = bishopEvalWhite[bbishop1] + chess.BISHOP
+bbishop2value = bishopEvalWhite[bbishop2] + chess.BISHOP
+
+brook1 = 56
+brook2 = 63
+brook1value = rookEvalBlack[brook1] + chess.ROOK
+brook2value = rookEvalBlack[brook2] + chess.ROOK
+
+bqueen1 = 59
+bqueen1value = queenevalBlack[bqueen1] + chess.QUEEN
+
+bking1 = 60
+bking1value = kingevalBlack[bking1] + chess.KING
