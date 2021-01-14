@@ -11,7 +11,6 @@ KING = 20000
 
 ply = 0
 
-
 pawnEvalWhite = [
     0, 0, 0, 0, 0, 0, 0, 0,
     50, 50, 50, 50, 50, 50, 50, 50,
@@ -184,10 +183,14 @@ bqueen1value = queenEvalBlack[bqueen1] + QUEEN
 bking1 = 60
 bking1value = kingEvalBlack[bking1] + KING
 
+
+
 # this next section dedicated to where a piece can move
 if ply < 3:
     pawnmoves = [-8, -16]
 else:
     pawnmoves = [-8]
-while gameend = False:
-    pass
+
+knightmoves = [-17, -15, -10, -6, 6, 10, 15, 17]    
+#while gameend == False:
+    #pass
