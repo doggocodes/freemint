@@ -192,5 +192,6 @@ else:
     pawnmoves = [-8]
 
 knightmoves = [-17, -15, -10, -6, 6, 10, 15, 17]    
+
 #while gameend == False:
     #pass
