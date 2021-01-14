@@ -1,15 +1,14 @@
-import chess
-import book
+
 import tkinter
 gameend = False
-pvalue = {
-    chess.PAWN: 100,
-    chess.ROOK: 480,
-    chess.KNIGHT: 330,
-    chess.BISHOP: 350,
-    chess.QUEEN: 955,
-    chess.KING: 20000
-}
+
+PAWN = 100
+ROOK = 480
+KNIGHT = 330
+BISHOP = 350
+QUEEN = 955
+KING = 20000
+
 
 pawnEvalWhite = [
     0, 0, 0, 0, 0, 0, 0, 0,
@@ -59,7 +58,7 @@ rookEvalWhite = [
 ]
 rookEvalBlack = list(reversed(rookEvalWhite))
 
-queenEval = [
+queenEvalWhite = [
     -10, -5, -10, 0, 0, 0, -5, -10,
     -10, 0, 0, 0, 0, 0, 0, -10,
     -10, 0, 5, 5, 5, 5, 0, -10,
@@ -69,6 +68,8 @@ queenEval = [
     -10, 0, 5, 0, 0, 0, 0, -10,
     -10, -5, -10, 0, 0, 0, -5, -10,
 ]
+
+queenEvalBlack = list(reversed(queenEvalWhite))
 
 kingEvalWhite = [
     -30, -40, -40, -50, -50, -40, -40, -30,
@@ -107,35 +108,35 @@ pawn5 = 52
 pawn6 = 53
 pawn7 = 54
 pawn8 = 55
-pawn1value = pawnEvalWhite[pawn1] + chess.PAWN
-pawn2value = pawnEvalWhite[pawn2] + chess.PAWN
-pawn3value = pawnEvalWhite[pawn3] + chess.PAWN
-pawn4value = pawnEvalWhite[pawn4] + chess.PAWN
-pawn5value = pawnEvalWhite[pawn5] + chess.PAWN
-pawn6value = pawnEvalWhite[pawn6] + chess.PAWN
-pawn7value = pawnEvalWhite[pawn7] + chess.PAWN
-pawn8value = pawnEvalWhite[pawn8] + chess.PAWN
+pawn1value = pawnEvalWhite[pawn1] + PAWN
+pawn2value = pawnEvalWhite[pawn2] + PAWN
+pawn3value = pawnEvalWhite[pawn3] + PAWN
+pawn4value = pawnEvalWhite[pawn4] + PAWN
+pawn5value = pawnEvalWhite[pawn5] + PAWN
+pawn6value = pawnEvalWhite[pawn6] + PAWN
+pawn7value = pawnEvalWhite[pawn7] + PAWN
+pawn8value = pawnEvalWhite[pawn8] + PAWN
 
 knight1 = 57
 knight2 = 62
-knight1value = knightEvalWhite[knight1] + chess.KNIGHT
-knight2value = knightEvalWhite[knight2] + chess.KNIGHT
+knight1value = knightEvalWhite[knight1] + KNIGHT
+knight2value = knightEvalWhite[knight2] + KNIGHT
 
 bishop1 = 58
 bishop2 = 61
-bishop1value = bishopEvalBlack[bishop1] + chess.BISHOP
-bishop2value = bishopEvalBlack[bishop2] + chess.BISHOP
+bishop1value = bishopEvalBlack[bishop1] + BISHOP
+bishop2value = bishopEvalBlack[bishop2] + BISHOP
 
 rook1 = 56
 rook2 = 63
-rook1value = rookEvalWhite[rook1] + chess.ROOK
-rook2value = rookEvalWhite[rook2] + chess.ROOK
+rook1value = rookEvalWhite[rook1] + ROOK
+rook2value = rookEvalWhite[rook2] + ROOK
 
 queen1 = 59
-queen1value = queenevalWhite[queen1] + chess.QUEEN
+queen1value = queenEvalWhite[queen1] + QUEEN
 
 king1 = 60
-king1value = kingevalWhite[king1] + chess.KING
+king1value = kingEvalWhite[king1] + KING
 
 
 
@@ -151,32 +152,32 @@ bpawn5 = 52
 bpawn6 = 53
 bpawn7 = 54
 bpawn8 = 55
-bpawn1value = pawnEvalBlack[bpawn1] + chess.PAWN
-bpawn2value = pawnEvalBlack[bpawn2] + chess.PAWN
-bpawn3value = pawnEvalBlack[bpawn3] + chess.PAWN
-bpawn4value = pawnEvalBlack[bpawn4] + chess.PAWN
-bpawn5value = pawnEvalBlack[bpawn5] + chess.PAWN
-bpawn6value = pawnEvalBlack[bpawn6] + chess.PAWN
-bpawn7value = pawnEvalBlack[bpawn7] + chess.PAWN
-bpawn8value = pawnEvalBlack[bpawn8] + chess.PAWN
+bpawn1value = pawnEvalBlack[bpawn1] + PAWN
+bpawn2value = pawnEvalBlack[bpawn2] + PAWN
+bpawn3value = pawnEvalBlack[bpawn3] + PAWN
+bpawn4value = pawnEvalBlack[bpawn4] + PAWN
+bpawn5value = pawnEvalBlack[bpawn5] + PAWN
+bpawn6value = pawnEvalBlack[bpawn6] + PAWN
+bpawn7value = pawnEvalBlack[bpawn7] + PAWN
+bpawn8value = pawnEvalBlack[bpawn8] + PAWN
 
 bknight1 = 57
 bknight2 = 62
-bknight1value = knightEvalBlack[bknight1] + chess.KNIGHT
-bknight2value = knightEvalBlack[bknight2] + chess.KNIGHT
+bknight1value = knightEvalBlack[bknight1] + KNIGHT
+bknight2value = knightEvalBlack[bknight2] + KNIGHT
 
 bbishop1 = 58
 bbishop2 = 61
-bbishop1value = bishopEvalWhite[bbishop1] + chess.BISHOP
-bbishop2value = bishopEvalWhite[bbishop2] + chess.BISHOP
+bbishop1value = bishopEvalWhite[bbishop1] + BISHOP
+bbishop2value = bishopEvalWhite[bbishop2] + BISHOP
 
 brook1 = 56
 brook2 = 63
-brook1value = rookEvalBlack[brook1] + chess.ROOK
-brook2value = rookEvalBlack[brook2] + chess.ROOK
+brook1value = rookEvalBlack[brook1] + ROOK
+brook2value = rookEvalBlack[brook2] + ROOK
 
 bqueen1 = 59
-bqueen1value = queenevalBlack[bqueen1] + chess.QUEEN
+bqueen1value = queenEvalBlack[bqueen1] + QUEEN
 
 bking1 = 60
-bking1value = kingevalBlack[bking1] + chess.KING
+bking1value = kingEvalBlack[bking1] + KING
