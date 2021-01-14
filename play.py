@@ -1,7 +1,7 @@
 import chess
 import book
 import tkinter
-
+gameend = False
 pvalue = {
     chess.PAWN: 100,
     chess.ROOK: 480,
