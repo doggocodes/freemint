@@ -95,12 +95,9 @@ kingEvalEndGameWhite = [
     -50, -30, -30, -30, -30, -30, -30, -50
 ]
 kingEvalEndGameBlack = list(reversed(kingEvalEndGameWhite))
+#nvm what i said prev
 
-# What I meant about crappy UI comes in here. 
-# The user will have to input every single position of piece in the starting position, and also the user will need to enter in moves by a lousy system, putting in the order-coordinate of a piece (e.g. 64 instead of h1)
-# 16 pawns+pieces for one side in setup
 
-#### Maybe I'm not fully understanding what you're trying to do here, but the "starting position" is always the same, right? Why does the user have to input it?
 #### another great place to use a dictionary (starting_white = {"pawn1": 48, "pawn2": 49, ...}) (your eval lines would look like pawnEvalWhite[starting_white["pawn1"] + PAWN)
 #### also, is the idea to analyze the game as it's played? if that's the case, I would only have users enter the "change". For instance - if "pawn1" moves to
 #### 47 (or whatever), you use the starting_[color] dictionary (or a copy of it) and only update "pawn1". 
