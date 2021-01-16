@@ -1,3 +1,9 @@
+##Looks like this piece of your code is in development, but this is a great place to think about using a for loop - for piece in range(32)...
+## you'd need to have an array or other structure that holds the information that changes between iterations (i.e. piece1, piece1loc). I'd suggest using a dictionary
+## as you can associate pieces of data easily this way (i.e. location = {"piece1": piece1loc, ...}
+## eventually, I'd imagine you'd like to have some kind of GUI (graphical interface) where instead of inputting positions manually, your code would detect the actual location
+## of pieces on an "actual" computer board. You could still use this type of code as the backbone for that, if you want.
+
 #Scrap stuff here for backup goes here
 #white
 piece1 = input("enter in piece abb")
