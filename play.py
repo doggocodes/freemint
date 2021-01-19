@@ -1,4 +1,4 @@
-
+crash = False
 import tkinter
 gameend = False
 
