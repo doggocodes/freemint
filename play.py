@@ -202,5 +202,7 @@ bishopmoves = [-49, -42, -35, -28, -21, -14, -7, 7, 14, 21, 28, 35, 42, 49, 56, 
 
 rookmoves = [-7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, -56, -48, -40, -32, -24, -16, -8, 8, 16, 24, 32, 40, 48, 56]
 
+queenmoves = bishopmoves + rookmoves
+
 #while gameend == False:
     #pass
