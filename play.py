@@ -1,6 +1,7 @@
 crash = False
 import tkinter
-gameend = False
+#just in case
+gameEnd = False
 
 PAWN = 100
 ROOK = 480
@@ -149,7 +150,7 @@ king1value = kingEvalWhite[king1] + KING
 # Computer always moves first for NOW
 
 
-#black side pieces
+#black/opponent side pieces
 bpawn1 = 48
 bpawn2 = 49
 bpawn3 = 50
@@ -189,20 +190,23 @@ bking1 = 60
 bking1value = kingEvalBlack[bking1] + KING
 
 
+while gameEnd = False:
+    # this next section dedicated to where a piece can move
+    if ply < 3:
+        pawnmoves = [-8, -16]
+    #elif bpawn1 or bpawn2 or bpawn3 or bpawn4 or bpawn5 or bpawn6 or bpawn7 or bpawn8     
+    #repetitive code in proto here DO NOT REMOVE
+    else:
+        pawnmoves = [-8]
 
-# this next section dedicated to where a piece can move
-if ply < 3:
-    pawnmoves = [-8, -16]
-else:
-    pawnmoves = [-8]
+    knightmoves = [-17, -15, -10, -6, 6, 10, 15, 17]    
 
-knightmoves = [-17, -15, -10, -6, 6, 10, 15, 17]    
+    bishopmoves = [-49, -42, -35, -28, -21, -14, -7, 7, 14, 21, 28, 35, 42, 49, 56, -63, -54, -45, -36, -27, -18, -9, 9, 18, 27, 36, 45, 54, 63]
 
-bishopmoves = [-49, -42, -35, -28, -21, -14, -7, 7, 14, 21, 28, 35, 42, 49, 56, -63, -54, -45, -36, -27, -18, -9, 9, 18, 27, 36, 45, 54, 63]
+    rookmoves = [-7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, -56, -48, -40, -32, -24, -16, -8, 8, 16, 24, 32, 40, 48, 56]
 
-rookmoves = [-7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, -56, -48, -40, -32, -24, -16, -8, 8, 16, 24, 32, 40, 48, 56]
+    queenmoves = bishopmoves + rookmoves
 
-queenmoves = bishopmoves + rookmoves
+    kingmoves = [-9, -8, -7, -1, 1, 7, 8, 9] 
 
-#while gameend == False:
-    #pass
+
