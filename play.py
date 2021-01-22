@@ -194,7 +194,7 @@ while gameEnd = False:
     # this next section dedicated to where a piece can move
     if ply < 3:
         pawnmoves = [-8, -16]
-    #elif bpawn1 or bpawn2 or bpawn3 or bpawn4 or bpawn5 or bpawn6 or bpawn7 or bpawn8     
+    #elif bpawn1 - 9 or bpawn2 - 9 or bpawn3 - 9 or bpawn4 - 9 or bpawn5 - 9 or bpawn6 - 9 or bpawn7 - 9 or bpawn8 - 9     
     #repetitive code in proto here DO NOT REMOVE
     else:
         pawnmoves = [-8]
