@@ -192,12 +192,34 @@ bking1value = kingEvalBlack[bking1] + KING
 
 while gameEnd = False:
     # this next section dedicated to where a piece can move
-    if ply < 3:
-        pawnmoves = [-8, -16]
-    #elif bpawn1 - 9 or bpawn2 - 9 or bpawn3 - 9 or bpawn4 - 9 or bpawn5 - 9 or bpawn6 - 9 or bpawn7 - 9 or bpawn8 - 9     
+
+    if bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn1:
+        pawn1moves = [-8, -9]
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn2:
+        pawn2moves = [-8, -9]
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn3:
+        pawn3moves = [-8, -9]
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn4:
+        pawn4moves = [-8, -9]
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn5:
+        pawn5moves = [-8, -9]
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn6:
+        pawn6moves = [-8, -9]
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn7:
+        pawn7moves = [-8, -9]
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn8:
+        pawn8moves = [-8, -9]
+     
     #repetitive code in proto here DO NOT REMOVE
     else:
-        pawnmoves = [-8]
+        pawn1moves = [-8]
+        pawn2moves = [-8]
+        pawn3moves = [-8]
+        pawn4moves = [-8]
+        pawn5moves = [-8]
+        pawn6moves = [-8]
+        pawn7moves = [-8]
+        pawn8moves = [-8]
 
     knightmoves = [-17, -15, -10, -6, 6, 10, 15, 17]    
 
