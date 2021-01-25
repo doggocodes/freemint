@@ -260,5 +260,7 @@ while gameEnd = False:
     queenmoves = bishopmoves + rookmoves
 
     kingmoves = [-9, -8, -7, -1, 1, 7, 8, 9] 
+    
+    
 
 
