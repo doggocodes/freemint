@@ -230,7 +230,15 @@ while gameEnd = False:
         pawn7moves = [-8, -7]
     elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  =  pawn8:
         pawn8moves = [-8, -7]            
-    
+    elif ply < 3:
+        pawn1moves = [-8, -16]
+        pawn2moves = [-8, -16]
+        pawn3moves = [-8, -16]
+        pawn4moves = [-8, -16]
+        pawn5moves = [-8, -16]
+        pawn6moves = [-8, -16]
+        pawn7moves = [-8, -16]
+        pawn8moves = [-8, -16]
      
     #repetitive code in proto here DO NOT REMOVE
     else:
