@@ -194,41 +194,41 @@ bking1value = kingEvalBlack[bking1] + KING
 
 
 
-while gameEnd = False:
+while gameEnd == False:
     # this next section dedicated to where a piece can move
 
-    if bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn1:
+    if bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn1:
         pawn1moves = [-8, -9]
-    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn2:
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn2:
         pawn2moves = [-8, -9]
-    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn3:
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn3:
         pawn3moves = [-8, -9]
-    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn4:
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn4:
         pawn4moves = [-8, -9]
-    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn5:
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn5:
         pawn5moves = [-8, -9]
-    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn6:
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn6:
         pawn6moves = [-8, -9]
-    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn7:
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn7:
         pawn7moves = [-8, -9]
-    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  =  pawn8:
+    elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn8:
         pawn8moves = [-8, -9]
         
-    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  =  pawn1:
+    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  ==  pawn1:
         pawn1moves = [-8, -7]
-    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  =  pawn2:
+    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  ==  pawn2:
         pawn2moves = [-8, -7]            
-    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  =  pawn3:
+    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  ==  pawn3:
         pawn3moves = [-8, -7]
-    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  =  pawn4:
+    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  ==  pawn4:
         pawn4moves = [-8, -7]            
-    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  =  pawn5:
+    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  ==  pawn5:
         pawn5moves = [-8, -7]
-    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  =  pawn6:
+    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  ==  pawn6:
         pawn6moves = [-8, -7]            
-    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  =  pawn7:
+    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  ==  pawn7:
         pawn7moves = [-8, -7]
-    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  =  pawn8:
+    elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  ==  pawn8:
         pawn8moves = [-8, -7]            
     elif ply < 3:
         pawn1moves = [-8, -16]
@@ -261,6 +261,7 @@ while gameEnd = False:
 
     kingmoves = [-9, -8, -7, -1, 1, 7, 8, 9] 
     
-    
+
+
 
 
