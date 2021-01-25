@@ -271,6 +271,10 @@ while gameEnd == False:
         checkcoord = coord - 1
         if pawnevalWhite[checkcoord] > pawnevalWhite[pawn1]:
             pawn1 = pawn1 + plus - 1
+            print("Pawn to order-coord", pawn1)
+            
+        else:
+            print(pawn1)
         
     
 
