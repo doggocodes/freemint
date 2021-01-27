@@ -18,8 +18,16 @@ ply = 0
     PiecesToCheck = [pawn1, pawn2, pawn3, pawn4, pawn5, pawn6, pawn7, pawn8, knight1, knight2, bishop1, bishop2, rook1, rook2, queen1, king1]
     
     piececheck1 = random.choice(PiecesToCheck)
-    
-    if piececheck1 = PiecesToCheck[0]:
+while True:   
+     if piececheck1 = PiecesToCheck[4]:
+        plus = random.choice(pawn4moves)
+        coord = pawn4 + plus
+        checkcoord = coord - 1
+        if pawnevalWhite[checkcoord] > pawnevalWhite[pawn4]:
+            pawn4 = pawn4 + plus - 1
+        else:
+            pawn4 = pawn4
+     elif piececheck1 = PiecesToCheck[0]:
         plus = random.choice(pawn1moves)
         coord = pawn1 + plus
         checkcoord = coord - 1
