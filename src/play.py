@@ -1,6 +1,6 @@
 crash = False
-import tkinter
 #just in case
+import tkinter
 gameEnd = False
 from chesspiecesetup import *
 
