@@ -1,9 +1,7 @@
-#!/bin/python3 
 crash = False
-
+import tkinter
 #just in case
 gameEnd = False
-import random
 
 PAWN = 100
 ROOK = 480
@@ -20,8 +18,8 @@ pawnEvalWhite = [
     10, 10, 20, 30, 30, 20, 10, 10,
     7, 8, 10, 15, 15, 10, 8, 7,
     0, 0, 0, 20, 20, 0, 0, 0,
-    0, 5, 15, 0, 0, 15, 5, 0,
-    0, 10, 10, -20, -20, 10, 10, 0,
+    5, -5, -10, 0, 0, -10, -5, 5,
+    8, 10, 10, -20, -20, 10, 10, 8,
     0, 0, 0, 0, 0, 0, 0, 0,
 ]
 pawnEvalBlack = list(reversed(pawnEvalWhite))
@@ -266,20 +264,12 @@ while gameEnd == False:
     PiecesToCheck = [pawn1, pawn2, pawn3, pawn4, pawn5, pawn6, pawn7, pawn8, knight1, knight2, bishop1, bishop2, rook1, rook2, queen1, king1]
     
     piececheck1 = random.choice(PiecesToCheck)
-    def MovePawn1():        
-        if pawnEvalWhite[checkcoord] > pawnEvalWhite[pawn1]:
+    
+    if piececheck1 = PiecesToCheck[0]:
+        plus = random.choice(pawn1moves)
+        coord = pawn1 + plus
+        checkcoord = coord - 1
+        if pawnevalWhite[checkcoord] > pawnevalWhite[pawn1]:
             pawn1 = pawn1 + plus - 1
-            print("Pawn to order-coord", pawn1)
-            
-        else:
-            print(pawn1) 
-    def CheckPawn1():
-        if piececheck1 == PiecesToCheck[0]:
-            plus = random.choice(pawn1moves)
-            coord = pawn1 + plus
-            checkcoord = coord - 1
-            MovePawn1()
-
         
     
-
