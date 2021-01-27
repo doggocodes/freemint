@@ -2,6 +2,7 @@ crash = False
 import tkinter
 #just in case
 gameEnd = False
+from chesspiecesetup import *
 
 PAWN = 100
 ROOK = 480
