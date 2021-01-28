@@ -23,22 +23,79 @@ while True:
         plus = random.choice(pawn4moves)
         coord = pawn4 + plus
         checkcoord = coord - 1
+        pawn4 = pawn4 + plus - 1
         if pawnevalWhite[checkcoord] > pawnevalWhite[pawn4]:
-            pawn4 = pawn4 + plus - 1
+            pawn4 = pawn4 - plus + 1
         else:
             pawn4 = pawn4
-     if piececheck1 = PiecesToCheck[4]:
+            
+     elif piececheck1 = PiecesToCheck[4]:
         plus = random.choice(pawn5moves)
         coord = pawn5 + plus
         checkcoord = coord - 1
+        pawn5 = pawn5 + plus - 1
         if pawnevalWhite[checkcoord] > pawnevalWhite[pawn5]:
-            pawn5 = pawn5 + plus - 1
+            pawn5 = pawn5 - plus + 1
         else:
-            pawn5 = pawn5
+            pawn5 = pawn5   
+            
      elif piececheck1 = PiecesToCheck[0]:
         plus = random.choice(pawn1moves)
         coord = pawn1 + plus
         checkcoord = coord - 1
+        pawn1 = pawn1 + plus - 1
         if pawnevalWhite[checkcoord] > pawnevalWhite[pawn1]:
-            pawn1 = pawn1 + plus - 1
+            pawn1 = pawn1 - plus + 1
+        else:
+            pawn1 = pawn1
+            
+          if piececheck1 = PiecesToCheck[3]:
+        plus = random.choice(pawn4moves)
+        coord = pawn4 + plus
+        checkcoord = coord - 1
+        pawn4 = pawn4 + plus - 1
+        if pawnevalWhite[checkcoord] > pawnevalWhite[pawn4]:
+            pawn4 = pawn4 - plus + 1
+        else:
+            pawn4 = pawn4
+            
+     elif piececheck1 = PiecesToCheck[4]:
+        plus = random.choice(pawn5moves)
+        coord = pawn5 + plus
+        checkcoord = coord - 1
+        pawn5 = pawn5 + plus - 1
+        if pawnevalWhite[checkcoord] > pawnevalWhite[pawn5]:
+            pawn5 = pawn5 - plus + 1
+        else:
+            pawn5 = pawn5
+            
+     elif piececheck1 = PiecesToCheck[0]:
+        plus = random.choice(pawn1moves)
+        coord = pawn1 + plus
+        checkcoord = coord - 1
+        pawn1 = pawn1 + plus - 1
+        if pawnevalWhite[checkcoord] > pawnevalWhite[pawn1]:
+            pawn1 = pawn1 - plus + 1
+        else:
+            pawn1 = pawn1    
+            
+     elif piececheck1 = PiecesToCheck[0]:
+        plus = random.choice(pawn1moves)
+        coord = pawn1 + plus
+        checkcoord = coord - 1
+        pawn1 = pawn1 + plus - 1
+        if pawnevalWhite[checkcoord] > pawnevalWhite[pawn1]:
+            pawn1 = pawn1 - plus + 1
+        else:
+            pawn1 = pawn1    
+            
+          elif piececheck1 = PiecesToCheck[0]:
+        plus = random.choice(pawn1moves)
+        coord = pawn1 + plus
+        checkcoord = coord - 1
+        pawn1 = pawn1 + plus - 1
+        if pawnevalWhite[checkcoord] > pawnevalWhite[pawn1]:
+            pawn1 = pawn1 - plus + 1
+        else:
+            pawn1 = pawn1        
         
