@@ -7,6 +7,7 @@ from IPython.display import SVG
 board = chess.Board()
 SVG(chess.svg.board(board=board,size=400))  
 
+history =[]
 
 
 def quiesce( alpha, beta ):
@@ -47,7 +48,7 @@ def alphabeta( alpha, beta, depthleft ):
 def select(depth):
     try:
         move = chess.polyglot.MemoryMappedReader("bookfish.bin").weighted_choice(board).move()
-        movehistory.append(move)
+        history.append(move)
         return move
     except:
         bestMove = chess.Move.null()
@@ -63,11 +64,6 @@ def select(depth):
             if( boardValue > alpha ):
                 alpha = boardValue
             board.pop()
-        movehistory.append(best)
+        history.append(best)
         return best  
     
-history =[]
-board = chess.Board()
-mov = selectmove(10)
-board.push(mov)
-SVG(chess.svg.board(board=board,size=400))    
