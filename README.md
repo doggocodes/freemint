@@ -3,4 +3,4 @@
 
 
 
-Freemint is a chess engine in development. It is open-source. The current UI is by order-coords from 1 to 64- hopefully this will change soon, if this engine ever gets good enough for CCC/CCRL.
+Freemint is a chess engine in development, with inspiration from Andreas Stöckl's chess engine. It is open-source. This used to be a whole different type of engine, but it has shaped itself differently, now using the "chess" module in PiP.
