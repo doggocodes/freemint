@@ -7,8 +7,7 @@ from IPython.display import SVG
 board = chess.Board()
 SVG(chess.svg.board(board=board,size=400))  
 
-#default depth
-depth = 10
+
 
 def quiesce( alpha, beta ):
     stand_pat = eval()
@@ -50,3 +49,9 @@ def select(depth):
             board.pop()
         movehistory.append(best)
         return best  
+    
+history =[]
+board = chess.Board()
+mov = selectmove(10)
+board.push(mov)
+SVG(chess.svg.board(board=board,size=400))    
