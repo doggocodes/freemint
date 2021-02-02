@@ -3,4 +3,4 @@
 
 
 
-Freemint is a chess engine in development, with inspiration from Andreas Stöckl's chess engine. It is open-source. This used to be a whole different type of engine, but it has shaped itself differently, now using the "chess" module in PiP.
+Freemint is an open-source engine that primarily looks at the best positional move for a random piece. There is no depth, but this will be added in later in developemnt.
