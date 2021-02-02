@@ -1,8 +1,9 @@
-rash = False
+crash = False
 #just in case
 import tkinter
 gameEnd = False
 from chesspiecesetup import *
+from table import *
 
 PAWN = 100
 ROOK = 480
