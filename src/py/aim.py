@@ -1,4 +1,3 @@
-
 pawn1 = 48
 pawn2 = 49
 pawn3 = 50
