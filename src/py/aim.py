@@ -36,12 +36,9 @@ queen1value = queenEvalWhite[queen1] + QUEEN
 king1 = 60
 king1value = kingEvalWhite[king1] + KING
 
-
-
 # Computer always moves first for NOW
-
-
 #black/opponent side pieces
+
 bpawn1 = 48
 bpawn2 = 49
 bpawn3 = 50
@@ -81,13 +78,8 @@ bking1 = 60
 bking1value = kingEvalBlack[bking1] + KING
 
 
-
-
-
-
 while gameEnd == False:
-    # this next section dedicated to where a piece can move
-
+##---this next section dedicated to where a piece can move
     if bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn1:
         pawn1moves = [-8, -9]
     elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn2:
@@ -103,8 +95,7 @@ while gameEnd == False:
     elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn7:
         pawn7moves = [-8, -9]
     elif bpawn1 + 9 or bpawn2 + 9 or bpawn3 + 9 or bpawn4 + 9 or bpawn5 + 9 or bpawn6 + 9 or bpawn7 + 9 or bpawn8 + 9  ==  pawn8:
-        pawn8moves = [-8, -9]
-        
+        pawn8moves = [-8, -9]    
     elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  ==  pawn1:
         pawn1moves = [-8, -7]
     elif bpawn1 + 7 or bpawn2 + 7 or bpawn3 + 7 or bpawn4 + 7 or bpawn5 + 7 or bpawn6 + 7 or bpawn7 + 7 or bpawn8 + 7  ==  pawn2:
@@ -130,8 +121,9 @@ while gameEnd == False:
         pawn6moves = [-8, -16]
         pawn7moves = [-8, -16]
         pawn8moves = [-8, -16]
-     
-    #repetitive code in proto here DO NOT REMOVE
+ 
+##------repetitive code in proto here DO NOT REMOVE
+
     else:
         pawn1moves = [-8]
         pawn2moves = [-8]
