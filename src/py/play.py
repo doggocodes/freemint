@@ -39,4 +39,3 @@ while True:
             pawn5 = pawn5  
      else:
         print("Zugzwang")
-        
