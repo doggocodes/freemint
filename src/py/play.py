@@ -16,9 +16,9 @@ ply = 0
 
 
     
-    PiecesToCheck = [pawn1, pawn2, pawn3, pawn4, pawn5, pawn6, pawn7, pawn8, knight1, knight2, bishop1, bishop2, rook1, rook2, queen1, king1]
+PiecesToCheck = [pawn1, pawn2, pawn3, pawn4, pawn5, pawn6, pawn7, pawn8, knight1, knight2, bishop1, bishop2, rook1, rook2, queen1, king1]
     
-    piececheck1 = random.choice(PiecesToCheck)
+piececheck1 = random.choice(PiecesToCheck)
 while True:   
      if piececheck1 = PiecesToCheck[3]:
         plus = random.choice(pawn4moves)
